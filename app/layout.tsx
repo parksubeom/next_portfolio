@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Do_Hyeon } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const do_Hyeon = Do_Hyeon({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Bum_Portfolio",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={do_Hyeon.className}>{children}</body>
     </html>
   );
 }
