@@ -46,7 +46,11 @@ body {
   }
   .text-title {
     font-size: 5.5rem;
-    line-height: 1;
+    line-height: 1.2;
+  }
+  .text-sub-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
   }
   .rel_width {
     width: 85%;
