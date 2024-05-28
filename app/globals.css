@@ -23,27 +23,118 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--color-main-003))
-    )
-    rgb(var(--color-main-00));
+  color: var(--color-main-001);
+  background: linear-gradient(to bottom, transparent, var(--color-main-004))
+    var(--color-main-003);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .underline-offset-1 {
+    text-underline-offset: 1px;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .underline-offset-8 {
+    text-underline-offset: 8px;
+  }
+  .text-title {
+    font-size: 5.5rem;
+    line-height: 1;
+  }
+  .rel_width {
+    width: 85%;
+  }
 }
 @keyframes identifier {
   0% {
-    /* 시작 상태 정의 */
-    transform: translateX(0);
+    opacity: 0;
+    filter: blur(20px);
   }
+
+  20% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  80% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
   100% {
-    /* 종료 상태 정의 */
-    transform: translateX(100px);
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+@keyframes movingImage {
+  30% {
+    clip-path: inset(0% 80% 0% 0px);
+  }
+
+  70% {
+    clip-path: inset(20% 80% 20% 0px);
+  }
+
+  100% {
+    clip-path: inset(100% 80% 0% 0px);
+  }
+}
+@keyframes movingImage2 {
+  30% {
+    clip-path: inset(5% 60% 5% 21%);
+  }
+
+  70% {
+    clip-path: inset(15% 60% 15% 21%);
+  }
+
+  100% {
+    clip-path: inset(100% 60% 0% 21%);
+  }
+}
+@keyframes movingImage3 {
+  30% {
+    clip-path: inset(10% 40% 10% 41%);
+  }
+
+  70% {
+    clip-path: inset(10% 40% 10% 41%);
+  }
+
+  100% {
+    clip-path: inset(50% 40% 50% 41%);
+  }
+}
+@keyframes movingImage4 {
+  30% {
+    clip-path: inset(15% 20% 15% 61%);
+  }
+
+  70% {
+    clip-path: inset(5% 20% 5% 61%);
+  }
+
+  100% {
+    clip-path: inset(0% 20% 100% 61%);
+  }
+}
+@keyframes movingImage5 {
+  30% {
+    clip-path: inset(20% 0% 20% 81%);
+  }
+
+  70% {
+    clip-path: inset(0% 0% 0% 81%);
+  }
+
+  100% {
+    clip-path: inset(0% 0% 100% 81%);
   }
 }

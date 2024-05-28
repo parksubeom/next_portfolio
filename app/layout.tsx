@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Do_Hyeon } from "next/font/google";
+import { Gowun_Dodum } from "next/font/google";
+import Header from "../components/header";
 import "./globals.css";
 import React from "react";
 
-const do_Hyeon = Do_Hyeon({
+const gowun_Dodum = Gowun_Dodum({
   subsets: ["latin"],
   weight: "400",
 });
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={do_Hyeon.className}>{children}</body>
+      <body className={gowun_Dodum.className}>
+        <Header />
+        <main className="flex min-h-screen flex-col items-center justify-between p-24 relative z-0">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
