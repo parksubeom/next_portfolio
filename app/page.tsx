@@ -5,7 +5,7 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col rel_width justify-center items-center gap-48">
+      <section className="flex flex-col rel_width justify-center items-center py-52 gap-48">
         <div className="flex flex-col gap-10">
           <h1 className="text-title text-center">
             <span className="font-semibold animate-identifier">S</span>

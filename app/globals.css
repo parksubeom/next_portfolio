@@ -23,6 +23,7 @@
 }
 
 body {
+  box-sizing: border-box;
   color: var(--color-main-001);
   background: linear-gradient(to bottom, transparent, var(--color-main-004))
     var(--color-main-003);

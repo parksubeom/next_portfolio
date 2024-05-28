@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={gowun_Dodum.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between py-52 relative z-0">
+        <main className="flex min-h-screen flex-col items-center justify-between  relative z-0">
           {children}
         </main>
       </body>
