@@ -143,8 +143,6 @@ body {
     clip-path: inset(0% 0% 100% 81%);
   }
 }
-
 .icon-click {
-  border: 1px solid white;
-  --tw-text-opacity: 1;
+  @apply border-white border-opacity-100 text-opacity-100;
 }

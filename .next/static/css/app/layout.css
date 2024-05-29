@@ -512,6 +512,9 @@ video {
 .z-\[1\] {
   z-index: 1;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .flex {
   display: flex;
 }
@@ -520,6 +523,9 @@ video {
 }
 .h-16 {
   height: 4rem;
+}
+.h-7 {
+  height: 1.75rem;
 }
 .h-\[400px\] {
   height: 400px;
@@ -536,6 +542,12 @@ video {
 .h-screen {
   height: 100vh;
 }
+.min-h-8 {
+  min-height: 2rem;
+}
+.min-h-96 {
+  min-height: 24rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -550,6 +562,12 @@ video {
 }
 .w-36 {
   width: 9rem;
+}
+.w-72 {
+  width: 18rem;
+}
+.w-96 {
+  width: 24rem;
 }
 .w-\[150px\] {
   width: 150px;
@@ -568,6 +586,31 @@ video {
 }
 .max-w-\[800px\] {
   max-width: 800px;
+}
+@keyframes identifier {
+
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  20% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  80% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+.animate-iconani {
+  animation: identifier 7s ease 0s normal none running;
 }
 @keyframes identifier {
 
@@ -1028,6 +1071,10 @@ video {
 .border-\[--color-main-002\] {
   border-color: var(--color-main-002);
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
@@ -1099,9 +1146,20 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-\[16rem\] {
+  font-size: 16rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1291,17 +1349,11 @@ body {
     clip-path: inset(0% 0% 100% 81%);
   }
 }
-
 .icon-click {
-  border: 1px solid white;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
   --tw-text-opacity: 1;
 }
-
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));

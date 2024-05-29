@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Introduction from "@/components/skill/introdution";
 import React from "react";
 import { useState } from "react";
 import { useSetRecoilState } from "recoil";
@@ -7,10 +7,15 @@ import { skillsData } from "../data/skillsData";
 import { deploymentData } from "../data/deploymentData";
 import { communicationData } from "../data/communicationData";
 import { useStackDataState } from "../state/atoms";
-
 type IconType = {
-  component: React.ComponentType<{ color: string }>;
+  component: React.ComponentType<{
+    color: string;
+    width: number | string;
+    height: number | string;
+  }>;
   color: string;
+  width: number | string;
+  height: number | string;
 };
 
 type SkillsData = {
@@ -19,6 +24,8 @@ type SkillsData = {
   icon: IconType;
   contents: string;
   color: string;
+  width: number | string;
+  height: number | string;
   gauge: number;
 };
 
@@ -102,6 +109,8 @@ export default function AboutMe() {
                     {
                       React.createElement(item.icon.component, {
                         color: item.icon.color,
+                        width: item.icon.width,
+                        height: item.icon.height,
                       }) as React.ReactElement
                     }{" "}
                     {item.name}
@@ -125,6 +134,8 @@ export default function AboutMe() {
                     {
                       React.createElement(item.icon.component, {
                         color: item.icon.color,
+                        width: item.icon.width,
+                        height: item.icon.height,
                       }) as React.ReactElement
                     }{" "}
                     {item.name}
@@ -136,8 +147,8 @@ export default function AboutMe() {
             {" "}
             <h1 className="text-2xl">COMMUNICATION</h1>
             <ul className="flex flex-wrap gap-3">
-              {communicationData &&
-                communicationData.map((item) => (
+              {cummuication &&
+                cummuication.map((item) => (
                   <li
                     key={item.index}
                     className={`skill-icon ${indexNum === item.index && `icon-click`} flex bg-white bg-opacity-20 text-white text-opacity-45 px-2 py-1 justify-center items-center gap-1 rounded-full border border-solid border-gray-500 cursor-pointer hover:text-white`}
@@ -148,6 +159,8 @@ export default function AboutMe() {
                     {
                       React.createElement(item.icon.component, {
                         color: item.icon.color,
+                        width: item.icon.width,
+                        height: item.icon.height,
                       }) as React.ReactElement
                     }{" "}
                     {item.name}
@@ -156,7 +169,9 @@ export default function AboutMe() {
             </ul>
           </div>
         </article>
-        <article className=" relative w-1/3 h-screen"></article>
+        <article className="flex justify-start items-center relative w-1/3 h-screen">
+          <Introduction />
+        </article>
       </div>
     </section>
   );

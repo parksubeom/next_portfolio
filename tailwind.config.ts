@@ -20,6 +20,7 @@ const config: Config = {
           "conic-gradient(from 90deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
+        iconani: "identifier 7s ease 0s normal none running",
         identifier: "identifier 7s ease 0s infinite normal none running",
         identifier2: "identifier 7s ease 0.1s infinite normal none running",
         identifier3: "identifier 7s ease 0.2s infinite normal none running",
@@ -52,7 +53,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }: { addUtilities: any }) {
       addUtilities({
         ".clip-path": {
           "clip-path": "inset(0px 80% 100% 0px)",
@@ -69,7 +70,6 @@ const config: Config = {
         ".clip-path5": {
           "clip-path": "inset(20% 0% 100% 81%)",
         },
-
         // 다른 모양을 추가할 수 있습니다.
       });
     },
