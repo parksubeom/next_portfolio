@@ -78,6 +78,27 @@ body {
     filter: blur(20px);
   }
 }
+@keyframes iconani {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  20% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  80% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
 @keyframes movingImage {
   30% {
     clip-path: inset(0% 80% 0% 0px);
@@ -145,4 +166,23 @@ body {
 }
 .icon-click {
   @apply border-white border-opacity-100 text-opacity-100;
+}
+.progress-bar {
+  @apply w-full bg-gray-200 rounded-3xl h-6;
+}
+
+.progress-bar::-webkit-progress-bar {
+  @apply bg-gray-200 rounded-lg;
+}
+
+.progress-bar::-webkit-progress-value {
+  @apply bg-blue-600 rounded-lg;
+}
+
+.progress-bar::-moz-progress-bar {
+  @apply bg-blue-600 rounded-lg;
+}
+
+.progress-text {
+  @apply absolute top-0 left-1/2 transform -translate-x-1/2 text-black font-bold;
 }

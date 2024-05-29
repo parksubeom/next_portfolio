@@ -15,12 +15,13 @@ const config: Config = {
         inset: "(0px 80% 100% 0px",
       },
       backgroundImage: {
+        "main-bg": "url(/background-main.png)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 90deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        iconani: "identifier 7s ease 0s normal none running",
+        iconani: "iconani 7s ease 0s normal none running",
         identifier: "identifier 7s ease 0s infinite normal none running",
         identifier2: "identifier 7s ease 0.1s infinite normal none running",
         identifier3: "identifier 7s ease 0.2s infinite normal none running",

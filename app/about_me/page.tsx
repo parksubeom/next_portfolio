@@ -44,7 +44,7 @@ export default function AboutMe() {
     <section className="flex flex-col min-h-screen items-center justify-between pt-16 w-screen">
       <div className="flex w-screen h-screen">
         {" "}
-        <article className="border-r border-[--color-main-002] relative w-1/3 h-screen">
+        <article className="border-r border-[--color-main-002] border-opacity-55 relative w-1/3 h-screen">
           <div className="w-full  px-[106px] py-[66px]">
             <h3 className="text-gray-300 font-medium opacity-50">
               오너십을 가지고 개발하는 프론트엔드 개발자
@@ -92,7 +92,7 @@ export default function AboutMe() {
             </ul>
           </div>
         </article>
-        <article className="bg-black border-r border-[--color-main-002] relative w-1/3 h-screen">
+        <article className="bg-black border-r border-[--color-main-002] border-opacity-5 relative w-1/3 h-screen">
           <div className="w-full  px-[106px] py-[66px] flex flex-col gap-10">
             {" "}
             <h1 className="text-2xl">STACK</h1>

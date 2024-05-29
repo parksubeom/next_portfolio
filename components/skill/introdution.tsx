@@ -20,14 +20,10 @@ const Introduction: React.FC = () => {
           }) as React.ReactElement
         }
       </div>
-      <span className="stack-name text-4xl">{clickStack.name}</span>
-      <div className="stack-gauge mt-8 w-72 h-7 min-h-8 border-2 border-black rounded-full">
-        <div
-          className="gauge-box bg-black rounded-full text-xs text-white flex items-center justify-center h-full"
-          style={{ width: `${clickStack.gauge}%` }}
-        >
-          {clickStack.gauge}%
-        </div>
+      <span className="stack-name text-4xl text-white">{clickStack.name}</span>
+      <div className="relative w-full mt-6">
+        <progress className="progress-bar" value="50" max="100"></progress>
+        <span className="progress-text">50%</span>
       </div>
       <div className="h-16">
         <p className="stack-intro mt-8">{clickStack.contents}</p>
