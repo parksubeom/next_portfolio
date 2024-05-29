@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Gowun_Dodum } from "next/font/google";
 import Header from "../components/header";
+import RecoilRootWrapper from "./recoilWrapper";
 import "./globals.css";
 import React from "react";
 
@@ -22,10 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gowun_Dodum.className}>
-        <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between  relative z-0">
-          {children}
-        </main>
+        <RecoilRootWrapper>
+          {" "}
+          <Header />
+          <main className="flex min-h-screen flex-col items-center justify-between  relative z-0">
+            {children}
+          </main>
+        </RecoilRootWrapper>
       </body>
     </html>
   );

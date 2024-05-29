@@ -1,6 +1,38 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
+import { useSetRecoilState } from "recoil";
+import { skillsData } from "../data/skillsData";
+import { deploymentData } from "../data/deploymentData";
+import { communicationData } from "../data/communicationData";
+import { useStackDataState } from "../state/atoms";
+
+type IconType = {
+  component: React.ComponentType<{ color: string }>;
+  color: string;
+};
+
+type SkillsData = {
+  index: number;
+  name: string;
+  icon: IconType;
+  contents: string;
+  color: string;
+  gauge: number;
+};
+
 export default function AboutMe() {
+  const setClickStack = useSetRecoilState(useStackDataState);
+  const [indexNum, setIndexNum] = useState(1);
+  const skill: SkillsData[] = skillsData;
+  const deployment: SkillsData[] = deploymentData;
+  const cummuication: SkillsData[] = communicationData;
+
+  const handleStack = (index: number, data: SkillsData) => {
+    setIndexNum(index);
+    setClickStack(data);
+  };
   return (
     <section className="flex flex-col min-h-screen items-center justify-between pt-16 w-screen">
       <div className="flex w-screen h-screen">
@@ -16,15 +48,19 @@ export default function AboutMe() {
             <ul className="flex flex-col w-full h-full">
               <li className="relative w-full flex justify-start gap-[4rem] py-3">
                 <span className="w-[75px]">생년월일</span>
-                <span className="opacity-50">1997.02.01</span>
+                <span className="text-white text-opacity-45">1997.02.01</span>
               </li>
               <li className="relative w-full flex justify-start gap-[4rem] py-3">
                 <span className="w-[75px]">전화번호</span>
-                <span className="opacity-50">010-8109-0731</span>
+                <span className="text-white text-opacity-45">
+                  010-8109-0731
+                </span>
               </li>
               <li className="relative w-full flex justify-start gap-[4rem] py-3">
                 <span className="w-[75px]">E-mail</span>
-                <span className="opacity-50">sooknise@naver.com</span>
+                <span className="text-white text-opacity-45">
+                  sooknise@naver.com
+                </span>
               </li>
               <li className="relative w-full flex justify-start gap-[4rem] py-3">
                 <span className="w-[75px]">이력서</span>
@@ -49,7 +85,77 @@ export default function AboutMe() {
             </ul>
           </div>
         </article>
-        <article className="bg-black border-r border-[--color-main-002] relative w-1/3 h-screen"></article>
+        <article className="bg-black border-r border-[--color-main-002] relative w-1/3 h-screen">
+          <div className="w-full  px-[106px] py-[66px] flex flex-col gap-10">
+            {" "}
+            <h1 className="text-2xl">STACK</h1>
+            <ul className="flex flex-wrap gap-3">
+              {skill &&
+                skill.map((item) => (
+                  <li
+                    key={item.index}
+                    className={`skill-icon ${indexNum === item.index && `icon-click`} flex bg-white bg-opacity-20 text-white text-opacity-45 px-2 py-1 justify-center items-center gap-1 rounded-full border border-solid border-gray-500 cursor-pointer  hover:text-white`}
+                    onClick={() => {
+                      handleStack(item.index, item);
+                    }}
+                  >
+                    {
+                      React.createElement(item.icon.component, {
+                        color: item.icon.color,
+                      }) as React.ReactElement
+                    }{" "}
+                    {item.name}
+                  </li>
+                ))}
+            </ul>
+          </div>
+          <div className="w-full  px-[106px] py-[66px] flex flex-col gap-10">
+            {" "}
+            <h1 className="text-2xl">DEPLOYMENT</h1>
+            <ul className="flex flex-wrap gap-3">
+              {deployment &&
+                deployment.map((item) => (
+                  <li
+                    key={item.index}
+                    className={`skill-icon ${indexNum === item.index && `icon-click`} flex bg-white bg-opacity-20 text-white text-opacity-45 px-2 py-1 justify-center items-center gap-1 rounded-full border border-solid border-gray-500 cursor-pointer hover:text-white`}
+                    onClick={() => {
+                      handleStack(item.index, item);
+                    }}
+                  >
+                    {
+                      React.createElement(item.icon.component, {
+                        color: item.icon.color,
+                      }) as React.ReactElement
+                    }{" "}
+                    {item.name}
+                  </li>
+                ))}
+            </ul>
+          </div>
+          <div className="w-full  px-[106px] py-[66px] flex flex-col gap-10">
+            {" "}
+            <h1 className="text-2xl">COMMUNICATION</h1>
+            <ul className="flex flex-wrap gap-3">
+              {communicationData &&
+                communicationData.map((item) => (
+                  <li
+                    key={item.index}
+                    className={`skill-icon ${indexNum === item.index && `icon-click`} flex bg-white bg-opacity-20 text-white text-opacity-45 px-2 py-1 justify-center items-center gap-1 rounded-full border border-solid border-gray-500 cursor-pointer hover:text-white`}
+                    onClick={() => {
+                      handleStack(item.index, item);
+                    }}
+                  >
+                    {
+                      React.createElement(item.icon.component, {
+                        color: item.icon.color,
+                      }) as React.ReactElement
+                    }{" "}
+                    {item.name}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </article>
         <article className=" relative w-1/3 h-screen"></article>
       </div>
     </section>
