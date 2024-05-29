@@ -9,9 +9,9 @@ const Introduction: React.FC = () => {
   return (
     <div
       key={clickStack.index}
-      className="flex items-center h-full w-full justify-center flex-col text-center text-white text-opacity-45 px-[106px]"
+      className="flex items-center h-full w-full mx-[70px] my-[70px] flex-col text-center text-white text-opacity-45"
     >
-      <div className="flex justify-center items-center stack-icon w-96 min-h-96 text-[16rem] animate-iconani">
+      <div className="flex justify-center items-center stack-icon xl:w-96 xl:h-96 text-[10rem] xl:text-[16rem] animate-iconani">
         {
           React.createElement(clickStack.icon.component, {
             color: clickStack.icon.color,

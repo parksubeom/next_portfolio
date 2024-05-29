@@ -13,6 +13,7 @@ type IconType = {
 };
 
 type StackData = {
+  ket?: string;
   index: number;
   name: string;
   icon: IconType;
