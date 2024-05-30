@@ -9,9 +9,9 @@ const Introduction: React.FC = () => {
   return (
     <div
       key={clickStack.index}
-      className="flex items-center h-full w-full mx-[70px] my-[70px] flex-col text-center text-white text-opacity-45"
+      className="mx-[70px] my-[70px] flex flex-col justify-center items-center"
     >
-      <div className="flex justify-center items-center stack-icon xl:w-96 xl:h-96 text-[10rem] xl:text-[16rem] animate-iconani">
+      <div className="flex justify-center items-center stack-icon text-[10rem] xl:text-[16rem] animate-iconani">
         {
           React.createElement(clickStack.icon.component, {
             color: clickStack.icon.color,
@@ -21,11 +21,11 @@ const Introduction: React.FC = () => {
         }
       </div>
       <span className="stack-name text-4xl text-white">{clickStack.name}</span>
-      <div className="relative w-full mt-6">
+      <div className="relative w-1/3 min-w-[280px] xl:w-full mt-6">
         <progress className="progress-bar" value="50" max="100"></progress>
         <span className="progress-text">50%</span>
       </div>
-      <div className="h-16">
+      <div className="relative w-1/3 min-w-[280px] xl:w-full mt-6">
         <p className="stack-intro mt-8">{clickStack.contents}</p>
       </div>
     </div>

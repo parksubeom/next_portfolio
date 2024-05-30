@@ -61,13 +61,13 @@ export default function AboutMe() {
     });
   }, []);
   return (
-    <section className="flex flex-col min-h-screen items-center justify-between pt-16 w-screen">
-      <div className="flex w-screen h-full">
+    <section className="flex flex-col items-center justify-between pt-16 w-screen">
+      <div className="flex flex-col xl:flex-row w-screen min-h-[650px]">
         {" "}
-        <article className="overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative w-1/3 h-screen flex flex-col items-center">
-          <div className="mx-[70px] my-[70px]">
+        <article className="overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-1/3  block items-center">
+          <div className="mx-[70px] my-[70px] flex xl:block">
             {" "}
-            <div className="w-full flex flex-col justify-center items-center text-start">
+            <div className="w-full flex flex-col justify-center items-start text-start">
               <div className="w-[300px]">
                 {" "}
                 <h3 className="text-gray-300 font-medium opacity-50">
@@ -118,10 +118,10 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className="overflow-hidden flex flex-col items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative w-1/3 h-screen">
-          <div className="mx-[70px] my-[70px]">
+        <article className="overflow-hidden block  items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative xl:w-1/3">
+          <div className="mx-[70px] my-[70px] flex flex-col gap-10 ">
             {" "}
-            <div className="xl:w-[400px] w-[280px] flex flex-col gap-10">
+            <div className=" w-full flex flex-col gap-10">
               {" "}
               <h1 className="text-2xl">STACK</h1>
               <ul className="flex flex-wrap gap-3">
@@ -146,7 +146,7 @@ export default function AboutMe() {
                   ))}
               </ul>
             </div>
-            <div className="xl:w-[400px] w-[280px] flex flex-col gap-10">
+            <div className=" w-full] flex flex-col gap-10">
               {" "}
               <h1 className="text-2xl">DEPLOYMENT</h1>
               <ul className="flex flex-wrap gap-3">
@@ -171,7 +171,7 @@ export default function AboutMe() {
                   ))}
               </ul>
             </div>
-            <div className="xl:w-[400px] w-[280px] flex flex-col gap-10">
+            <div className=" w-full flex flex-col gap-10">
               {" "}
               <h1 className="text-2xl">COMMUNICATION</h1>
               <ul className="flex flex-wrap gap-3">
@@ -198,7 +198,7 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className="overflow-hidden flex justify-start items-start relative w-1/3 h-screen">
+        <article className="overflow-hidden block  justify-start items-start relative xl:w-1/3 ">
           <Introduction />
         </article>
       </div>
