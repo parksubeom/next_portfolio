@@ -195,7 +195,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-start">
                 <h2 className="text-2xl font-semibold">SSEM 홈페이지 리뉴얼</h2>
                 <p className="text-md">
-                  100만 세금신고 앱 "SSEM" 홈페이지 리뉴얼
+                  100만 세금신고 앱 SSEM 홈페이지 리뉴얼
                 </p>
               </div>
             </li>
