@@ -65,7 +65,7 @@ export default function AboutMe() {
       <div className="flex flex-col xl:flex-row w-screen min-h-[650px]">
         {" "}
         <article className="overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-1/3  block items-center">
-          <div className="mx-[70px] my-[70px] flex xl:block">
+          <div className="mx-[70px] my-[70px] block">
             {" "}
             <div className="w-full flex flex-col justify-center items-start text-start">
               <div className="w-[300px]">

@@ -9,7 +9,7 @@ const Introduction: React.FC = () => {
   return (
     <div
       key={clickStack.index}
-      className="mx-[70px] my-[70px] flex flex-col justify-center items-center"
+      className="mx-[70px] my-[70px] flex flex-col justify-center items-center gap-8"
     >
       <div className="flex justify-center items-center stack-icon text-[10rem] xl:text-[16rem] animate-iconani">
         {
