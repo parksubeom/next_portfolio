@@ -22,8 +22,12 @@ const Introduction: React.FC = () => {
       </div>
       <span className="stack-name text-4xl text-white">{clickStack.name}</span>
       <div className="relative w-1/3 min-w-[280px] xl:w-full mt-6">
-        <progress className="progress-bar" value="50" max="100"></progress>
-        <span className="progress-text">50%</span>
+        <progress
+          className="progress-bar"
+          value={clickStack.gauge}
+          max="100"
+        ></progress>
+        <span className="progress-text">{clickStack.gauge}%</span>
       </div>
       <div className="relative w-1/3 min-w-[280px] xl:w-full mt-6">
         <p className="stack-intro mt-8">{clickStack.contents}</p>
