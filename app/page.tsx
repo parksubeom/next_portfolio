@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section className="flex flex-col rel_width justify-center items-center py-52 gap-48">
         <div className="flex flex-col gap-10">
-          <h1 className="text-title text-center">
+          <h1 className="sm:text-title text-6xl text-center">
             <span className="font-semibold animate-identifier">S</span>
             <span className="font-semibold animate-identifier2 ">U</span>
             <span className="font-semibold animate-identifier3 ">B</span>
@@ -45,7 +45,7 @@ export default function Home() {
             </p>
           </h2>
         </div>
-        <article className="flex relative justify-center w-2/3 max-w-[800px] h-[400px] ">
+        <article className="flex relative justify-center w-2/3 max-w-[800px] sm:h-[400px] h-[230px] ">
           <Image
             className="animate-movingimage absolute clip-path"
             src="/moon.jpg"
@@ -78,7 +78,7 @@ export default function Home() {
           />
         </article>
         <article className="text-center flex flex-col gap-16">
-          <h1 className="text-sub-title text-center">
+          <h1 className="md:text-sub-title text-4xl text-center">
             내가 생각하는 함께
             <br /> 일하고 싶은 개발자는?
           </h1>
@@ -158,24 +158,33 @@ export default function Home() {
               more
             </button>
           </div>
-          <ul className="flex flex-col gap-8">
-            <li className="w-full flex justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img className="w-36 h-[88px] rounded-xl" src="/uncover.png" />
-              <div className="flex flex-col justify-center items-start">
+          <ul className="flex flex-col justify-center items-center gap-8">
+            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <img
+                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                src="/uncover.png"
+              />
+              <div className="flex flex-col justify-center items-start text-left">
                 <h2 className="text-2xl font-semibold">UNCOVER</h2>
                 <p className="text-md">노카피라이트 음원 스트리밍 서비스</p>
               </div>
             </li>
-            <li className="w-full flex justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img className="w-36 h-[88px] rounded-xl" src="/ticat.png" />
-              <div className="flex flex-col justify-center items-start">
+            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <img
+                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                src="/ticat.png"
+              />
+              <div className="flex flex-col justify-center items-start text-left">
                 <h2 className="text-2xl font-semibold">TICAT</h2>
                 <p className="text-md">전국 축제안내 서비스</p>
               </div>
             </li>
-            <li className="w-full flex justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img className="w-36 h-[88px] rounded-xl" src="/anischool.gif" />
-              <div className="flex flex-col justify-center items-start">
+            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <img
+                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                src="/anischool.gif"
+              />
+              <div className="flex flex-col justify-center items-start text-left">
                 <h2 className="text-2xl font-semibold">ANI-SCHOOL</h2>
                 <p className="text-md">캐릭터 프로필이미지 생성 서비스</p>
               </div>
@@ -190,18 +199,24 @@ export default function Home() {
             </button>
           </div>
           <ul className="flex flex-col gap-8">
-            <li className="w-full flex justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img className="w-36 h-[88px] rounded-xl" src="/ssem.png" />
-              <div className="flex flex-col justify-center items-start">
+            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <img
+                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                src="/ssem.png"
+              />
+              <div className="flex flex-col justify-center items-start text-left">
                 <h2 className="text-2xl font-semibold">SSEM 홈페이지 리뉴얼</h2>
                 <p className="text-md">
                   100만 세금신고 앱 SSEM 홈페이지 리뉴얼
                 </p>
               </div>
             </li>
-            <li className="w-full flex justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img className="w-36 h-[88px] rounded-xl" src="/moa.png" />
-              <div className="flex flex-col justify-center items-start">
+            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <img
+                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                src="/moa.png"
+              />
+              <div className="flex flex-col justify-center items-start text-left">
                 <h2 className="text-2xl font-semibold">
                   모아프렌즈 어드민 대시보드
                 </h2>

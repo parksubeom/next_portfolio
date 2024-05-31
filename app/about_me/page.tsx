@@ -64,7 +64,7 @@ export default function AboutMe() {
     <section className="flex pt-16 w-screen h-full min-h-screen flex-grow">
       <div className="flex flex-col xl:flex-row w-screen">
         {" "}
-        <article className="animate-opneani1 overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-[0%]  block items-center">
+        <article className="h-screen xl:h-full animate-opneani1 overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-[0%]  block items-center">
           <div className="md:px-[70px] md:py-[70px] mx-[30px] my-[30px] block">
             {" "}
             <div className="w-full flex flex-col justify-center items-start text-start">
@@ -119,7 +119,7 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className="animate-opneani2 overflow-hidden block  items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative xl:w-[0%]">
+        <article className="h-screen xl:h-full animate-opneani2 overflow-hidden block  items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative xl:w-[0%]">
           <div className="md:px-[70px] md:py-[70px] px-[30px] py-[30px] flex flex-col gap-10 ">
             {" "}
             <div className=" w-full flex flex-col gap-10">
@@ -199,7 +199,7 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className=" overflow-hidden block  justify-start items-start relative xl:w-full ">
+        <article className="h-screen xl:h-full overflow-hidden block  justify-start items-start relative xl:w-full ">
           <Introduction />
         </article>
       </div>
