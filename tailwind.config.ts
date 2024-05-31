@@ -44,6 +44,7 @@ const config: Config = {
         movingimage5: "movingImage5 5s ease 0s infinite normal none running ;",
         opneani1: "openAni 1s ease 0s 1 normal forwards running;",
         opneani2: "openAni 1s ease 1s 1 normal forwards running;",
+        slideDown: "slideDown 0.5s ease-out forwards",
       },
       keyframes: {
         identifier: {
@@ -51,6 +52,10 @@ const config: Config = {
           "20%": { opacity: "1", filter: "blur(0px)" },
           "80%": { opacity: "1", filter: "blur(0px)" },
           "100%": { opacity: "0", filter: "blur(20px)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(-60%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
     },
