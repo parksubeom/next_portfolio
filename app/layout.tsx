@@ -26,7 +26,7 @@ export default function RootLayout({
         <RecoilRootWrapper>
           {" "}
           <Header />
-          <main className="bg-cover bg-center bg-[url('/background-main.png')] flex min-h-screen flex-col items-center justify-between  relative z-0">
+          <main className="bg-cover bg-center bg-[url('/background-main.png')] flex min-h-screen flex-col items-center justify-between relative z-0">
             {children}
           </main>
         </RecoilRootWrapper>

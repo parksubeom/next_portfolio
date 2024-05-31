@@ -61,17 +61,18 @@ export default function AboutMe() {
     });
   }, []);
   return (
-    <section className="flex flex-col items-center justify-between pt-16 w-screen">
-      <div className="flex flex-col xl:flex-row w-screen min-h-[650px]">
+    <section className="flex pt-16 w-screen h-full min-h-screen flex-grow">
+      <div className="flex flex-col xl:flex-row w-screen">
         {" "}
-        <article className="overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-1/3  block items-center">
-          <div className="mx-[70px] my-[70px] block">
+        <article className=" overflow-hidden border-r border-[--color-main-002] border-opacity-55 relative xl:w-1/3  block items-center">
+          <div className="md:px-[70px] md:py-[70px] mx-[30px] my-[30px] block">
             {" "}
             <div className="w-full flex flex-col justify-center items-start text-start">
-              <div className="w-[300px]">
+              <div className="xl:w-[300px] w-full">
                 {" "}
                 <h3 className="text-gray-300 font-medium opacity-50">
-                  오너십을 가지고 개발하는 프론트엔드 개발자
+                  오너십을 가지고 개발하는
+                  <wbr /> 프론트엔드 개발자
                 </h3>
                 <h1 className="font-bold text-sub-title mb-10">박수범</h1>
               </div>
@@ -118,8 +119,8 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className="overflow-hidden block  items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative xl:w-1/3">
-          <div className="mx-[70px] my-[70px] flex flex-col gap-10 ">
+        <article className=" overflow-hidden block  items-center gap-10 bg-black border-r border-[--color-main-002] border-opacity-5 relative xl:w-1/3">
+          <div className="md:px-[70px] md:py-[70px] px-[30px] py-[30px] flex flex-col gap-10 ">
             {" "}
             <div className=" w-full flex flex-col gap-10">
               {" "}
@@ -198,7 +199,7 @@ export default function AboutMe() {
             </div>
           </div>
         </article>
-        <article className="overflow-hidden block  justify-start items-start relative xl:w-1/3 ">
+        <article className=" overflow-hidden block  justify-start items-start relative xl:w-1/3 ">
           <Introduction />
         </article>
       </div>
