@@ -188,3 +188,8 @@ body {
     clip-path: inset(0% 0% 100% 81%);
   }
 }
+@keyframes openAni {
+  100% {
+    width: 100%;
+  }
+}

@@ -42,6 +42,8 @@ const config: Config = {
         movingimage3: "movingImage3 5s ease 0s infinite normal none running ;",
         movingimage4: "movingImage4 5s ease 0s infinite normal none running ;",
         movingimage5: "movingImage5 5s ease 0s infinite normal none running ;",
+        opneani1: "openAni 1s ease 0s 1 normal forwards running;",
+        opneani2: "openAni 1s ease 1s 1 normal forwards running;",
       },
       keyframes: {
         identifier: {
