@@ -1,7 +1,7 @@
 "use client";
 import Introduction from "@/components/skill/introdution";
 import React from "react";
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { useSetRecoilState } from "recoil";
 import { skillsData } from "../data/skillsData";
