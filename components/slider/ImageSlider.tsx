@@ -8,7 +8,6 @@ interface ImageSliderProps {
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ imgArr }) => {
-  console.log(imgArr);
   const settings = {
     dots: true,
     infinite: true,

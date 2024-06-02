@@ -23,9 +23,6 @@ export default function Header() {
           <Link className="hover:text-[--color-sub-002]" href="/project">
             PROJECT
           </Link>
-          <Link className="hover:text-[--color-sub-002]" href="/">
-            CARRER
-          </Link>
         </nav>
         <nav className="lg:hidden flex xl:text-lg text-base w-1/2 justify-end items-center">
           <button
@@ -61,13 +58,6 @@ export default function Header() {
                 href="/project"
               >
                 PROJECT
-              </Link>
-              <Link
-                className="hover:text-[--color-sub-002]"
-                onClick={() => setOpenGnb(!openGnb)}
-                href="/"
-              >
-                CARRER
               </Link>
             </nav>
           </div>

@@ -43,55 +43,65 @@ export default function ProjectPage() {
                 </div>
                 <div className="project-date flex text-xl">{project.date}</div>
                 <div className="project-info flex justify-center items-start w-full gap-10">
-                  <div className="project-img flex-grow w-1/2">
+                  <div className="project-img flex-grow w-[250px]">
                     <ImageSlider imgArr={project.image} />
                   </div>
-                  <div className="project-description flex flex-col items-center flex-grow">
+                  <div className="project-description flex flex-col items-center w-[300px] flex-grow">
                     <div className="project-top-description">
                       {project.description}
                     </div>
                     <div className="description-div-line w-full border-t border-gray-400 my-8"></div>
-                    <div className="project-bottom-description">
+                    <div className="project-bottom-description w-full">
                       <ul className="flex flex-col gap-3">
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full ">
+                          <div className="info-title  font-bold">
                             <p>주요기능</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="">
                             <p>{project.mainfunction}</p>
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full ">
+                          <div className="info-title  font-bold">
                             <p>GitHub</p>
                           </div>
-                          <a href={project.github}>{project.github}</a>
+                          <a
+                            className="text-[--color-sub-002]"
+                            href={project.github}
+                          >
+                            깃허브 주소
+                          </a>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full ">
+                          <div className="info-title  font-bold">
                             <p>URL</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="">
                             {project.url === "" ? (
                               <p>서비스 임시종료 (aws 이슈)</p>
                             ) : (
-                              <a href={project.url}>{project.url}</a>
+                              <a
+                                className="text-[--color-sub-002]"
+                                href={project.url}
+                              >
+                                서비스 주소
+                              </a>
                             )}
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full ">
+                          <div className="info-title  font-bold">
                             <p>Stack</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="">
                             <p>{project.stack}</p>
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full ">
+                          <div className="info-title  font-bold">
                             <p>Deployment</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="">
                             <p>{project.deployment}</p>
                           </div>
                         </li>
@@ -123,45 +133,50 @@ export default function ProjectPage() {
                     <div className="description-div-line w-full border-t border-gray-400 my-8"></div>
                     <div className="project-bottom-description">
                       <ul className="flex flex-col gap-3">
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full">
+                          <div className="info-title font-bold">
                             <p>주요기능</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="flex-grow">
                             <p>{project.mainfunction}</p>
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full">
+                          <div className="info-title  font-bold">
                             <p>GitHub</p>
                           </div>
-                          <a href={project.github}>{project.github}</a>
+                          <div className="flex-grow">{project.github}</div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full">
+                          <div className="info-title  font-bold">
                             <p>URL</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="flex-grow">
                             {project.url === "" ? (
                               <p>사내 백오피스 서비스라 접속불가</p>
                             ) : (
-                              <a href={project.url}>{project.url}</a>
+                              <a
+                                className="text-[--color-sub-002]"
+                                href={project.url}
+                              >
+                                서비스링크
+                              </a>
                             )}
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full">
+                          <div className="info-title  font-bold">
                             <p>Stack</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="flex-grow">
                             <p>{project.stack}</p>
                           </div>
                         </li>
-                        <li className="flex gap-6">
-                          <div className="info-title w-[120px] font-bold">
+                        <li className="flex flex-col gap-2 w-full">
+                          <div className="info-title  font-bold">
                             <p>Deployment</p>
                           </div>
-                          <div className="w-[50%]">
+                          <div className="flex-grow">
                             <p>{project.deployment}</p>
                           </div>
                         </li>

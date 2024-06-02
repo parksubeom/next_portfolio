@@ -54,7 +54,7 @@ export const projectData: ProjectData[] = [
   {
     index: 3,
     title: "ANI SCHOOL (캐릭터 프로필이미지 생성 서비스)",
-    date: "2023-03 (솔로 프로젝트)",
+    date: "2023-03 (개인 프로젝트)",
     image: [
       "/anischool_img/075.png",
       "/anischool_img/076.png",
