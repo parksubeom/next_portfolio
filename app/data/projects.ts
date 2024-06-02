@@ -14,7 +14,7 @@ export const projectData: ProjectData[] = [
   {
     index: 1,
     title: "TICAT (전국 축제안내 서비스)",
-    date: "2023-07 ~ 2023-09",
+    date: "2023-07 ~ 2023-09 (5인 프로젝트)",
     image: [
       "/ticat_img/071.png",
       "/ticat_img/072.png",
@@ -35,7 +35,7 @@ export const projectData: ProjectData[] = [
   {
     index: 2,
     title: "UNCOVER (노카피라이트 음원 스트리밍 서비스)",
-    date: "2023-05 ~ 2023-06",
+    date: "2023-05 ~ 2023-06 (6인 프로젝트)",
     image: [
       "/uncover_img/067.png",
       "/uncover_img/068.png",
@@ -54,7 +54,7 @@ export const projectData: ProjectData[] = [
   {
     index: 3,
     title: "ANI SCHOOL (캐릭터 프로필이미지 생성 서비스)",
-    date: "2023-03",
+    date: "2023-03 (솔로 프로젝트)",
     image: [
       "/anischool_img/075.png",
       "/anischool_img/076.png",
