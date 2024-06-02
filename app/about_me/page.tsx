@@ -59,7 +59,7 @@ export default function AboutMe() {
       height: "16rem",
       gauge: 100,
     });
-  }, []);
+  }, [setClickStack]);
   return (
     <section className="flex pt-16 w-screen h-full min-h-screen flex-grow">
       <div className="flex flex-col xl:flex-row w-screen">

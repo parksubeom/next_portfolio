@@ -12,7 +12,7 @@ type ProjectData = {
 };
 export const corpProjectData: ProjectData[] = [
   {
-    index: 1,
+    index: 4,
     title: "SSEM 홈페이지 리뉴얼",
     date: "2024-05 ~ 2023-06 (프론트엔드 담당)",
     image: [
@@ -31,7 +31,7 @@ export const corpProjectData: ProjectData[] = [
     deployment: "사내서버",
   },
   {
-    index: 2,
+    index: 5,
     title: "SSEM 운영반영 시스템",
     date: "2023-04 ~ 2023-05 (프론트엔드 담당)",
     image: [

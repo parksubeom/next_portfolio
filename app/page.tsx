@@ -161,6 +161,7 @@ export default function Home() {
           <ul className="flex flex-col justify-center items-center gap-8">
             <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
               <img
+                alt="프로젝트이미지"
                 className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
                 src="/uncover.png"
               />
@@ -171,6 +172,7 @@ export default function Home() {
             </li>
             <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
               <img
+                alt="프로젝트이미지"
                 className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
                 src="/ticat.png"
               />
@@ -181,6 +183,7 @@ export default function Home() {
             </li>
             <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
               <img
+                alt="프로젝트이미지"
                 className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
                 src="/anischool.gif"
               />
@@ -201,6 +204,7 @@ export default function Home() {
           <ul className="flex flex-col gap-8">
             <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
               <img
+                alt="프로젝트이미지"
                 className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
                 src="/ssem.png"
               />
@@ -213,6 +217,7 @@ export default function Home() {
             </li>
             <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
               <img
+                alt="프로젝트이미지"
                 className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
                 src="/moa.png"
               />
