@@ -1,0 +1,17 @@
+name: Deploy to Vercel using Deploy Hook
+
+on:
+  schedule:
+    - cron: "0 */4 * * *" # 매 4시간마다 실행
+  workflow_dispatch:
+  push:
+    branches:
+      - main # main 브랜치에 푸시될 때 실행
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Vercel Deploy Hook
+        run: curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
