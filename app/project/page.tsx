@@ -7,6 +7,11 @@ type ProjectData = {
   date: string;
   image: string[];
   description: string;
+  mainfunction: string;
+  github: string;
+  url: string;
+  stack: string;
+  deployment: string;
 };
 export default function ProjectPage() {
   const project: ProjectData[] = projectData;
@@ -32,7 +37,53 @@ export default function ProjectPage() {
                     </div>
                     <div className="description-div-line w-[80%] border-t border-gray-400 my-4"></div>
                     <div className="project-bottom-description">
-                      {project.description}
+                      <ul className="flex flex-col gap-3">
+                        <li className="flex gap-6">
+                          <div className="info-title w-[120px]">
+                            {" "}
+                            <p>주요기능</p>
+                          </div>
+                          <div className="w-[50%]">
+                            <p>{project.mainfunction}</p>
+                          </div>
+                        </li>
+                        <li className="flex gap-6">
+                          <div className="info-title w-[120px]">
+                            {" "}
+                            <p>GitHub</p>
+                          </div>
+                          <a href={project.github}>{project.github}</a>
+                        </li>
+                        <li className="flex gap-6">
+                          <div className="info-title w-[120px]">
+                            <p>URL</p>
+                          </div>
+                          <div className="w-[50%]">
+                            {" "}
+                            {project.url === "" ? (
+                              <p>서비스 임시종료 (aws 이슈)</p>
+                            ) : (
+                              <a href={project.url}>{project.url}</a>
+                            )}
+                          </div>
+                        </li>
+                        <li className="flex gap-6">
+                          <div className="info-title w-[120px]">
+                            <p>Stack</p>
+                          </div>
+                          <div className="w-[50%]">
+                            <p>{project.stack}</p>
+                          </div>
+                        </li>
+                        <li className="flex gap-6">
+                          <div className="info-title w-[120px]">
+                            <p>Deployment</p>
+                          </div>
+                          <div className="w-[50%]">
+                            <p>{project.deployment}</p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
