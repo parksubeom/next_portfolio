@@ -108,7 +108,7 @@ export default function ProjectPage() {
           <TabsContent value="corp_project">
             {corp_roject.map((project) => {
               return (
-                <div className="project flex flex-col justify-center items-center w-full bg-white rounded-lg px-[3rem] py-[3rem] gap-6">
+                <div className="project flex flex-col justify-center items-center w-full  bg-white rounded-lg px-[3rem] py-[3rem] gap-6">
                   <div className="project-title flex justify-center items-center text-sub-title font-bold">
                     {project.title}
                   </div>
@@ -120,7 +120,7 @@ export default function ProjectPage() {
                       <ImageSlider imgArr={project.image} />
                     </div>
                     <div className="project-description flex flex-col items-center flex-grow">
-                      <div className="project-top-description ">
+                      <div className="project-top-description w-1/2">
                         {project.description}
                       </div>
                       <div className="description-div-line w-full border-t border-gray-400 my-8"></div>
