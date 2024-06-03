@@ -66,7 +66,7 @@ export default function ProjectPage() {
                             <p>GitHub</p>
                           </div>
                           <a
-                            className="text-[--color-sub-002]"
+                            className="text-[--color-sub-001] underline"
                             href={project.github}
                           >
                             깃허브 주소
@@ -81,7 +81,7 @@ export default function ProjectPage() {
                               <p>서비스 임시종료 (aws 이슈)</p>
                             ) : (
                               <a
-                                className="text-[--color-sub-002]"
+                                className="text-[--color-sub-001] underline"
                                 href={project.url}
                               >
                                 서비스 주소
@@ -156,7 +156,7 @@ export default function ProjectPage() {
                               <p>사내 백오피스 서비스라 접속불가</p>
                             ) : (
                               <a
-                                className="text-[--color-sub-002]"
+                                className="text-[--color-sub-001] underline"
                                 href={project.url}
                               >
                                 서비스링크
