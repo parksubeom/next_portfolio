@@ -164,7 +164,7 @@ export default function Home() {
           <ul className="flex flex-col gap-8">
             <Link href="/project#UNCOVER">
               {" "}
-              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
                   className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
@@ -178,7 +178,7 @@ export default function Home() {
             </Link>
             <Link href="/project#TICAT">
               {" "}
-              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
                   className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
@@ -192,7 +192,7 @@ export default function Home() {
             </Link>
             <Link href="/project#ANISCHOOL">
               {" "}
-              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
                   className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
@@ -218,7 +218,7 @@ export default function Home() {
           </div>
           <ul className="flex flex-col gap-8">
             <Link href="/project#SSEM">
-              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
                   className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
@@ -235,7 +235,7 @@ export default function Home() {
               </li>
             </Link>
             <Link href="/project#SDLC">
-              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
                   className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
