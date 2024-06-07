@@ -7,6 +7,7 @@ type ProjectData = {
   mainfunction: string;
   github: string;
   url: string;
+  detail: string;
   stack: string;
   deployment: string;
 };
@@ -27,6 +28,8 @@ export const corpProjectData: ProjectData[] = [
       "faq 챗봇과 대화, 디바이스 타입을 윈도우 서비스와 앱 서비스를 판별하여 다운로드 진행, 2580px - 360px 사이즈에 대한 반응형 웹 ",
     github: "(SVN)사내 레포지토리",
     url: "https://ssem.kr/",
+    detail:
+      "https://fuchsia-kettle-64f.notion.site/2cd44dee6b6545869fd2e7e55007c67f?v=52c763cdf8dc4a1f9a77e54d24f7c4f6&p=b2a241cdb18f4cddac4d9c330a863b3f&pm=c",
     stack: "자체프레임워크 (Javascript,제이쿼리 기반)",
     deployment: "사내서버",
   },
@@ -46,6 +49,7 @@ export const corpProjectData: ProjectData[] = [
       "SVN 커밋로그 불러오기, 버전변경, 반영승인 시 해당파일 쉘스크립트가 읽을 수 있게 데이터 생성, 진행상황 시각화",
     github: "(SVN)사내 레포지토리",
     url: "",
+    detail: "",
     stack: "자체프레임워크 (Javascript,제이쿼리 기반)",
     deployment: "사내서버",
   },

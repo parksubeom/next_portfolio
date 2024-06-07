@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { projectData } from "../data/projects";
@@ -16,6 +16,7 @@ type ProjectData = {
   mainfunction: string;
   github: string;
   url: string;
+  detail: string;
   stack: string;
   deployment: string;
 };
@@ -112,9 +113,16 @@ export default function ProjectPage() {
                     dangerouslySetInnerHTML={{ __html: project.description }}
                   ></div>
                   <div className="flex w-full justify-start item-center mt-8">
-                    <button className="flex justify-center item-center px-2 py-1 bg-black rounded text-white cursor-pointer">
-                      자세히 보기
-                    </button>
+                    <Link
+                      href={project.detail}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <button className="flex justify-center item-center px-2 py-1 bg-black rounded text-white cursor-pointer">
+                        자세히 보기
+                      </button>
+                    </Link>
                   </div>
                   <div className="description-div-line w-full border-t border-gray-400 my-8"></div>
                   <div className="project-bottom-description w-full">
@@ -197,6 +205,20 @@ export default function ProjectPage() {
                   <div className="project-top-description">
                     {project.description}
                   </div>
+                  {project.detail !== "" ? (
+                    <div className="flex w-full justify-start item-center mt-8">
+                      <Link
+                        href={project.detail}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <button className="flex justify-center item-center px-2 py-1 bg-black rounded text-white cursor-pointer">
+                          자세히 보기
+                        </button>
+                      </Link>
+                    </div>
+                  ) : null}
                   <div className="description-div-line w-full border-t border-gray-400 my-8"></div>
                   <div className="project-bottom-description">
                     <ul className="flex flex-col gap-3">

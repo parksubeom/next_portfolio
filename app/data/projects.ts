@@ -7,6 +7,7 @@ type ProjectData = {
   mainfunction: string;
   github: string;
   url: string;
+  detail: string;
   stack: string;
   deployment: string;
 };
@@ -36,6 +37,8 @@ export const projectData: ProjectData[] = [
       "원하는 지역 축제 찾기,내 주변 축제 찾기,축제 일정 캘린더 등록하기,현재 내 위치에서 축제장소 길 찾기,축제 상세정보 및 관련된 축제 추천,해당축제와 일정거리이상 가까워지면 스탬프찍기 활성화",
     github: "https://github.com/parksubeom/ticat-client",
     url: "https://d99pqcn6hzkdg.cloudfront.net/",
+    detail:
+      "https://fuchsia-kettle-64f.notion.site/2cd44dee6b6545869fd2e7e55007c67f?v=52c763cdf8dc4a1f9a77e54d24f7c4f6&p=fb28da26c60f47f3bdcba2cf8ec6aa2b&pm=c",
     stack: "React, TypeScript, Zustand, Styled-components, React-query",
     deployment: "AWS S3, AWS CloudFront, PWA",
   },
@@ -62,6 +65,8 @@ export const projectData: ProjectData[] = [
       "음원 스트리밍,음원 다운로드,음원 태그에 따라 분류 및 서칭,플레이리스트 CRUD플레이리스트 댓글 CRUD,음원이 영상에 어울리는지 핏을 확인하는 믹싱페이지",
     github: "https://github.com/codestates-seb/seb43_main_017",
     url: "",
+    detail:
+      "https://fuchsia-kettle-64f.notion.site/2cd44dee6b6545869fd2e7e55007c67f?v=52c763cdf8dc4a1f9a77e54d24f7c4f6&p=ae347026c2ef4072a548c7255cd7a883&pm=c",
     stack: "React, TypeScript, Recoil, Styled-components, axios",
     deployment: "AWS S3, AWS CloudFront",
   },
@@ -88,6 +93,8 @@ export const projectData: ProjectData[] = [
       "랜덤한 캐릭터 이미지 생성, 파츠별 이미지 변경, 랜덤버튼 클릭 시, 일정확률로 레어요소 등장, 프로필이미지 png파일로 내려받기",
     github: "https://github.com/parksubeom/Ani_School",
     url: "https://parksubeom.github.io/Project_RetroAnimal_Generator/",
+    detail:
+      "https://fuchsia-kettle-64f.notion.site/2cd44dee6b6545869fd2e7e55007c67f?v=52c763cdf8dc4a1f9a77e54d24f7c4f6&p=57ec321ee8a14fee98061253b099fae6&pm=c",
     stack: "React, Recoil, 외부 스타일시트",
     deployment: "Git pages",
   },
