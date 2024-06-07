@@ -33,6 +33,10 @@ body {
     var(--color-main-003);
 }
 
+.red_text {
+  font-weight: bold;
+  color: coral;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
