@@ -154,53 +154,7 @@ export default function Home() {
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
             <h1 className="text-2xl">Side Project</h1>
-            <Link href="/project">
-              {" "}
-              <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
-                more
-              </button>
-            </Link>
-          </div>
-          <ul className="flex flex-col justify-center items-center gap-8">
-            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img
-                alt="프로젝트이미지"
-                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
-                src="/uncover.png"
-              />
-              <div className="flex flex-col justify-center items-start text-left">
-                <h2 className="text-2xl font-semibold">UNCOVER</h2>
-                <p className="text-md">노카피라이트 음원 스트리밍 서비스</p>
-              </div>
-            </li>
-            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img
-                alt="프로젝트이미지"
-                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
-                src="/ticat.png"
-              />
-              <div className="flex flex-col justify-center items-start text-left">
-                <h2 className="text-2xl font-semibold">TICAT</h2>
-                <p className="text-md">전국 축제안내 서비스</p>
-              </div>
-            </li>
-            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img
-                alt="프로젝트이미지"
-                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
-                src="/anischool.gif"
-              />
-              <div className="flex flex-col justify-center items-start text-left">
-                <h2 className="text-2xl font-semibold">ANI-SCHOOL</h2>
-                <p className="text-md">캐릭터 프로필이미지 생성 서비스</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
-          <div className="flex flex-col gap-3 justify-center items-center">
-            <h1 className="text-2xl">Company Project</h1>
-            <Link href="/project">
+            <Link href="/project/#UNCOVER">
               {" "}
               <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
                 more
@@ -208,34 +162,95 @@ export default function Home() {
             </Link>
           </div>
           <ul className="flex flex-col gap-8">
-            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img
-                alt="프로젝트이미지"
-                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
-                src="/ssem.png"
-              />
-              <div className="flex flex-col justify-center items-start text-left">
-                <h2 className="text-2xl font-semibold">SSEM 홈페이지 리뉴얼</h2>
-                <p className="text-md">
-                  100만 세금신고 앱 SSEM 홈페이지 리뉴얼
-                </p>
-              </div>
-            </li>
-            <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
-              <img
-                alt="프로젝트이미지"
-                className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
-                src="/moa.png"
-              />
-              <div className="flex flex-col justify-center items-start text-left">
-                <h2 className="text-2xl font-semibold">
-                  모아프렌즈 어드민 대시보드
-                </h2>
-                <p className="text-md">
-                  회사 서비스의 각종 지표를 모아볼 수 있는 대시보드
-                </p>
-              </div>
-            </li>
+            <Link href="/project#UNCOVER">
+              {" "}
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+                <img
+                  alt="프로젝트이미지"
+                  className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                  src="/uncover.png"
+                />
+                <div className="flex flex-col justify-center items-start text-left">
+                  <h2 className="text-2xl font-semibold">UNCOVER</h2>
+                  <p className="text-md">노카피라이트 음원 스트리밍 서비스</p>
+                </div>
+              </li>
+            </Link>
+            <Link href="/project#TICAT">
+              {" "}
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+                <img
+                  alt="프로젝트이미지"
+                  className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                  src="/ticat.png"
+                />
+                <div className="flex flex-col justify-center items-start text-left">
+                  <h2 className="text-2xl font-semibold">TICAT</h2>
+                  <p className="text-md">전국 축제안내 서비스</p>
+                </div>
+              </li>
+            </Link>
+            <Link href="/project#ANISCHOOL">
+              {" "}
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+                <img
+                  alt="프로젝트이미지"
+                  className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                  src="/anischool.gif"
+                />
+                <div className="flex flex-col justify-center items-start text-left">
+                  <h2 className="text-2xl font-semibold">ANI-SCHOOL</h2>
+                  <p className="text-md">캐릭터 프로필이미지 생성 서비스</p>
+                </div>
+              </li>
+            </Link>
+          </ul>
+        </div>
+        <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
+          <div className="flex flex-col gap-3 justify-center items-center">
+            <h1 className="text-2xl">Company Project</h1>
+            <Link href="/project#SSEM">
+              {" "}
+              <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
+                more
+              </button>
+            </Link>
+          </div>
+          <ul className="flex flex-col gap-8">
+            <Link href="/project#SSEM">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+                <img
+                  alt="프로젝트이미지"
+                  className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                  src="/ssem.png"
+                />
+                <div className="flex flex-col justify-center items-start text-left">
+                  <h2 className="text-2xl font-semibold">
+                    SSEM 홈페이지 리뉴얼
+                  </h2>
+                  <p className="text-md">
+                    100만 세금신고 앱 SSEM 홈페이지 리뉴얼
+                  </p>
+                </div>
+              </li>
+            </Link>
+            <Link href="/project#SDLC">
+              <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12">
+                <img
+                  alt="프로젝트이미지"
+                  className="sm:w-36 sm:h-[88px] h-[45vw] rounded-xl"
+                  src="/sdlc.png"
+                />
+                <div className="flex flex-col justify-center items-start text-left">
+                  <h2 className="text-2xl font-semibold">
+                    SSEM 운영반영 시스템
+                  </h2>
+                  <p className="text-md">
+                    SVN API를 이용한 사내 형상관리 시스템
+                  </p>
+                </div>
+              </li>
+            </Link>
           </ul>
         </div>
       </section>
