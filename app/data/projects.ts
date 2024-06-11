@@ -32,7 +32,10 @@ export const projectData: ProjectData[] = [
         <p>
           <span class="red_text">PWA</span>를 통해 빌드해보면서 앞으로 웹 생태계가 뻗어나갈 무한한 가능성과 확장성을 몸소
           체감할 수 있었습니다.
-        </p>`,
+        </p>
+        <p>
+        현재는 AWS EC2 서버 이슈로 API를 불러오지 않고있습니다.
+      </p>`,
     mainfunction:
       "원하는 지역 축제 찾기,내 주변 축제 찾기,축제 일정 캘린더 등록하기,현재 내 위치에서 축제장소 길 찾기,축제 상세정보 및 관련된 축제 추천,해당축제와 일정거리이상 가까워지면 스탬프찍기 활성화",
     github: "https://github.com/parksubeom/ticat-client",
