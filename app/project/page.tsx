@@ -79,7 +79,7 @@ export default function ProjectPage() {
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
-  }, [pathname, project, corp_project]);
+  }, [pathname, project, corp_project, tabValue]);
 
   return (
     <section className="flex flex-col min-h-screen items-center justify-between pt-16 w-screen">

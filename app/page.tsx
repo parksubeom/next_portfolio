@@ -38,9 +38,7 @@ export default function Home() {
             <p>
               {" "}
               그러한 서비스를 현실로 구현할 수 있는{" "}
-              <span className="text-[--color-sub-002] underline decoration-dotted underline-offset-4">
-                프론트엔드 개발자
-              </span>
+              <span className="text-[--color-sub-002] ">프론트엔드 개발자</span>
               가 되고자합니다.
             </p>
           </h2>
@@ -95,7 +93,7 @@ export default function Home() {
             <br></br>
             <span>
               제가 생각하기에 가장 중요한 역량은 서비스를 같이 만들어가는 <br />
-              <span className="text-[--color-sub-002] underline decoration-dotted underline-offset-4">
+              <span className="text-[--color-sub-002]">
                 팀원과의 협력과 소통
               </span>
               이라고 생각합니다.
@@ -115,14 +113,14 @@ export default function Home() {
             <span>
               <Link
                 className="text-[--color-sub-002] underline decoration-dotted underline-offset-4"
-                href="/"
+                href="/project"
               >
                 3개의 사이드 프로젝트
               </Link>
               와{" "}
               <Link
                 className="text-[--color-sub-002] underline decoration-dotted underline-offset-4"
-                href="/"
+                href="/project#SSEM"
               >
                 2번의 회사 프로젝트
               </Link>
@@ -145,7 +143,7 @@ export default function Home() {
               사용자에게 조금 더
             </span>
             <br />
-            <span className="text-[--color-sub-002] underline decoration-dotted underline-offset-4">
+            <span className="text-[--color-sub-002] ">
               편리하고 interactive한 사용감을 줄 수 있는 프론트엔드 개발자가
               되고 싶습니다.
             </span>
