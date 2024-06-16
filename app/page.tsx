@@ -153,7 +153,7 @@ export default function Home() {
         </article>
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
-            <h1 className="text-2xl">Side Project</h1>
+            <h1 className="text-2xl">Side Projectss</h1>
             <Link href="/project/#UNCOVER">
               {" "}
               <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
-            <h1 className="text-2xl">Company Project</h1>
+            <h1 className="text-2xl">Company Projects</h1>
             <Link href="/project#SSEM">
               {" "}
               <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
