@@ -30,6 +30,7 @@ export default function Home() {
             <span>
               오너십을 가지고 서비스를 개발하는 프론트엔드 개발자 박수범 입니다.
             </span>
+            <br />
             <span>
               {" "}
               내가 직접 기여한 서비스가 누군가의 불편함을 덜어 줄 수 있다고
