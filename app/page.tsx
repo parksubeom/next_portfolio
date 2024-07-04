@@ -50,35 +50,30 @@ export default function Home() {
             className="animate-movingimage absolute clip-path"
             src="/moon.jpg"
             alt="메인 이미지"
-            priority
             fill
           />
           <Image
             className="animate-movingimage2 absolute clip-path2"
             src="/moon.jpg"
             alt="메인 이미지"
-            priority
             fill
           />
           <Image
             className="animate-movingimage3 absolute clip-path3"
             src="/moon.jpg"
             alt="메인 이미지"
-            priority
             fill
           />
           <Image
             className="animate-movingimage4 absolute clip-path4"
             src="/moon.jpg"
             alt="메인 이미지"
-            priority
             fill
           />
           <Image
             className="animate-movingimage5 absolute clip-path5"
             src="/moon.jpg"
             alt="메인 이미지"
-            priority
             fill
           />
         </article>
