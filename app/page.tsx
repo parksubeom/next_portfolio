@@ -153,10 +153,10 @@ export default function Home() {
           <div className="flex flex-col gap-3 justify-center items-center">
             <h1 className="text-2xl">Side Project</h1>
             <Link href="/project/#TICAT">
-              \{" "}
-              <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
+              {" "}
+              <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
                 more
-              </button>
+              </div>
             </Link>
           </div>
           <ul className="flex flex-col gap-8">
@@ -209,9 +209,9 @@ export default function Home() {
             <h1 className="text-2xl">Company Projects</h1>
             <Link href="/project#SSEM">
               {" "}
-              <button className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
+              <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
                 more
-              </button>
+              </div>
             </Link>
           </div>
           <ul className="flex flex-col gap-8">
