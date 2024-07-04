@@ -36,12 +36,13 @@ export default function Home() {
               내가 직접 기여한 서비스가 누군가의 불편함을 덜어 줄 수 있다고
               생각하며,
             </span>
-            <p>
+            <br />
+            <span>
               {" "}
               그러한 서비스를 현실로 구현할 수 있는{" "}
               <span className="text-[--color-sub-002] ">프론트엔드 개발자</span>
               가 되고자합니다.
-            </p>
+            </span>
           </h2>
         </div>
         <article className="flex relative justify-center w-2/3 max-w-[800px] sm:h-[400px] h-[230px] ">
@@ -49,30 +50,35 @@ export default function Home() {
             className="animate-movingimage absolute clip-path"
             src="/moon.jpg"
             alt="메인 이미지"
+            priority
             fill
           />
           <Image
             className="animate-movingimage2 absolute clip-path2"
             src="/moon.jpg"
             alt="메인 이미지"
+            priority
             fill
           />
           <Image
             className="animate-movingimage3 absolute clip-path3"
             src="/moon.jpg"
             alt="메인 이미지"
+            priority
             fill
           />
           <Image
             className="animate-movingimage4 absolute clip-path4"
             src="/moon.jpg"
             alt="메인 이미지"
+            priority
             fill
           />
           <Image
             className="animate-movingimage5 absolute clip-path5"
             src="/moon.jpg"
             alt="메인 이미지"
+            priority
             fill
           />
         </article>
