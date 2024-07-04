@@ -27,14 +27,14 @@ export default function Home() {
             <span className="font-semibold animate-identifier15 ">O</span>
           </h1>
           <h2 className="text-lg font-thin text-center">
-            <p>
+            <span>
               오너십을 가지고 서비스를 개발하는 프론트엔드 개발자 박수범 입니다.
-            </p>
-            <p>
+            </span>
+            <span>
               {" "}
               내가 직접 기여한 서비스가 누군가의 불편함을 덜어 줄 수 있다고
               생각하며,
-            </p>
+            </span>
             <p>
               {" "}
               그러한 서비스를 현실로 구현할 수 있는{" "}
@@ -76,10 +76,10 @@ export default function Home() {
           />
         </article>
         <article className="text-center flex flex-col gap-16">
-          <h1 className="md:text-sub-title text-4xl text-center">
+          <h3 className="md:text-sub-title text-4xl text-center">
             내가 생각하는 함께
             <br /> 일하고 싶은 개발자는?
-          </h1>
+          </h3>
           <p className="text-gray-300">
             <span>
               깔끔한 UI를 만들고, 예쁘게 꾸미는 것이 프론트엔드 개발자에게 가장
@@ -151,7 +151,7 @@ export default function Home() {
         </article>
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
-            <h1 className="text-2xl">Side Project</h1>
+            <h3 className="text-2xl">Side Project</h3>
             <Link href="/project/#TICAT">
               {" "}
               <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
@@ -206,7 +206,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
-            <h1 className="text-2xl">Company Projects</h1>
+            <h3 className="text-2xl">Company Projects</h3>
             <Link href="/project#SSEM">
               {" "}
               <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
