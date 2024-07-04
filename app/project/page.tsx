@@ -128,7 +128,7 @@ export default function ProjectPage() {
                   <div className="project-bottom-description w-full">
                     <ul className="flex flex-col gap-3">
                       <li className="flex flex-col gap-2 w-full ">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>주요기능</p>
                         </div>
                         <div className="">
@@ -136,7 +136,7 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full ">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>GitHub</p>
                         </div>
                         <a
@@ -147,7 +147,7 @@ export default function ProjectPage() {
                         </a>
                       </li>
                       <li className="flex flex-col gap-2 w-full ">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>URL</p>
                         </div>
                         <div className="">
@@ -164,7 +164,7 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full ">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>Stack</p>
                         </div>
                         <div className="">
@@ -172,7 +172,7 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full ">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>Deployment</p>
                         </div>
                         <div className="">
@@ -223,7 +223,7 @@ export default function ProjectPage() {
                   <div className="project-bottom-description">
                     <ul className="flex flex-col gap-3">
                       <li className="flex flex-col gap-2 w-full">
-                        <div className="info-title font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>주요기능</p>
                         </div>
                         <div className="flex-grow">
@@ -231,13 +231,13 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>GitHub</p>
                         </div>
                         <div className="flex-grow">{project.github}</div>
                       </li>
                       <li className="flex flex-col gap-2 w-full">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>URL</p>
                         </div>
                         <div className="flex-grow">
@@ -254,7 +254,7 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>Stack</p>
                         </div>
                         <div className="flex-grow">
@@ -262,7 +262,7 @@ export default function ProjectPage() {
                         </div>
                       </li>
                       <li className="flex flex-col gap-2 w-full">
-                        <div className="info-title  font-bold">
+                        <div className="info-title font-bold text-xl">
                           <p>Deployment</p>
                         </div>
                         <div className="flex-grow">
