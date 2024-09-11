@@ -116,6 +116,7 @@ export default function Home() {
               <Link
                 className="text-[--color-sub-002] underline decoration-dotted underline-offset-4"
                 href="/project"
+                title="사이드 프로젝트 페이지 링크"
               >
                 3개의 사이드 프로젝트
               </Link>
@@ -123,6 +124,7 @@ export default function Home() {
               <Link
                 className="text-[--color-sub-002] underline decoration-dotted underline-offset-4"
                 href="/project#SSEM"
+                title="회사 프로젝트 페이지 링크"
               >
                 2번의 회사 프로젝트
               </Link>
@@ -154,7 +156,7 @@ export default function Home() {
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
             <h3 className="text-2xl">Side Project</h3>
-            <Link href="/project/#TICAT">
+            <Link href="/project/#TICAT" title="사이드 프로젝트 더보기 링크">
               {" "}
               <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
                 more
@@ -162,7 +164,7 @@ export default function Home() {
             </Link>
           </div>
           <ul className="flex flex-col gap-8">
-            <Link href="/project#UNCOVER">
+            <Link href="/project#UNCOVER" title="노카피라이트 음원 스트리밍 서비스 언커버 프로젝트 링크">
               {" "}
               <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
@@ -176,7 +178,7 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            <Link href="/project#TICAT">
+            <Link href="/project#TICAT" title="전국 축제안내 서비스 티캣 프로젝트 링크">
               {" "}
               <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
@@ -190,7 +192,7 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            <Link href="/project#ANISCHOOL">
+            <Link href="/project#ANISCHOOL" title="캐릭터 프로필이미지 생성 프로젝트 링크">
               {" "}
               <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
@@ -209,7 +211,7 @@ export default function Home() {
         <div className="flex flex-col text-center justify-center gap-8 w-[85vw]">
           <div className="flex flex-col gap-3 justify-center items-center">
             <h3 className="text-2xl">Company Projects</h3>
-            <Link href="/project#SSEM">
+            <Link href="/project#SSEM" title="회사 프로젝트 더보기 링크">
               {" "}
               <div className="w-[150px] justify-center items-center border-solid border-2 border-s-teal-800-600 rounded-full px-1 py-1">
                 more
@@ -217,7 +219,7 @@ export default function Home() {
             </Link>
           </div>
           <ul className="flex flex-col gap-8">
-            <Link href="/project#SSEM">
+            <Link href="/project#SSEM" title="SSEM 홈페이지 리뉴얼 프로젝트 링크">
               <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
@@ -234,7 +236,7 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            <Link href="/project#SDLC">
+            <Link href="/project#SDLC" title="SSEM 운영반영 시스템 프로젝트 링크">
               <li className="w-full flex flex-col sm:flex-row justify-start bg-white bg-opacity-10 px-6 py-6 rounded-xl shadow-xl gap-12 transform transition-transform duration-300 hover:scale-105">
                 <img
                   alt="프로젝트이미지"
