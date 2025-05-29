@@ -100,7 +100,7 @@ export const deploymentData: DeployMentData[] = [
       height: "16rem",
     },
     contents:
-      "Next.js 프로젝트에 최적화되어 있고, 간편한 설정과 자동화된 ci/cd 파이프라인이 매력적으로 다가와서 사용해봤습니다..",
+      "Next.js 프로젝트에 최적화되어 있고, 간편한 설정과 자동화된 ci/cd 파이프라인이 매력적으로 다가와서 사용해봤습니다.",
     color: "#5a0fc8",
     width: "16rem",
     height: "16rem",

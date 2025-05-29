@@ -15,7 +15,7 @@ export const corpProjectData: ProjectData[] = [
   {
     index: 4,
     title: "SSEM (홈페이지 리뉴얼)",
-    date: "2024-05 ~ 2023-06 (프론트엔드 담당)",
+    date: "2024-05 ~ 2024-06 (프론트엔드 담당)",
     image: [
       "/ssem_img/ssem_main.png",
       "/ssem_img/ssem_info.png",
@@ -36,7 +36,7 @@ export const corpProjectData: ProjectData[] = [
   {
     index: 5,
     title: "SDLC (SSEM 운영반영 시스템)",
-    date: "2023-04 ~ 2023-05 (프론트엔드 담당)",
+    date: "2024-04 ~ 2024-05 (프론트엔드 담당)",
     image: [
       "/sdlc_img/sdlc0.png",
       "/sdlc_img/sdlc1.png",

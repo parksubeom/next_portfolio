@@ -95,7 +95,7 @@ export const projectData: ProjectData[] = [
     mainfunction:
       "랜덤한 캐릭터 이미지 생성, 파츠별 이미지 변경, 랜덤버튼 클릭 시, 일정확률로 레어요소 등장, 프로필이미지 png파일로 내려받기",
     github: "https://github.com/parksubeom/Ani_School",
-    url: "https://parksubeom.github.io/Project_RetroAnimal_Generator/",
+    url: "https://parksubeom.github.io/Ani_School/",
     detail:
       "https://fuchsia-kettle-64f.notion.site/2cd44dee6b6545869fd2e7e55007c67f?v=52c763cdf8dc4a1f9a77e54d24f7c4f6&p=57ec321ee8a14fee98061253b099fae6&pm=c",
     stack: "React, Recoil, 외부 스타일시트",
